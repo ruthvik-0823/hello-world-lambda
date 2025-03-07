@@ -11,7 +11,7 @@ exports.handler = async (event) => {
     message: "Hello from Lambda"
     }),
     };
-    } else {cd
+    } else {
     return {
     statusCode: 400,
     headers: { "Content-Type": "application/json" },
