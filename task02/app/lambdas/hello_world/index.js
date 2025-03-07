@@ -1,4 +1,4 @@
-xports.handler = async (event) => {
+exports.handler = async (event) => {
     const path = event.rawPath || event.path;
     const method = event.requestContext?.http?.method || event.httpMethod;
      
@@ -11,7 +11,7 @@ xports.handler = async (event) => {
     message: "Hello from Lambda"
     }),
     };
-    } else {
+    } else {cd
     return {
     statusCode: 400,
     headers: { "Content-Type": "application/json" },
